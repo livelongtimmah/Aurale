@@ -1,0 +1,42 @@
+html {
+    height: 100%;
+}
+
+body { 
+    height: 100%; 
+    margin: 0; 
+    padding: 0;
+}
+
+h1 {
+    left:100px;
+    position:fixed;
+}
+
+#map_canvas { 
+    height: 100%;
+}
+
+/*
+#nav {
+    background-color:blue;
+}
+*/
+
+#nav ul {
+    list-style:none;
+    vertical-align:middle;
+    top:15px;
+    left:200px;
+    position:absolute;
+}
+
+#nav li {
+    display:inline;
+}
+
+#search_map {
+    top:30px;
+    right:100px;
+    position:fixed;
+}
