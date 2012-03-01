@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html>
  <head>
+   <link href="style.css" rel="stylesheet" type="text/css" />
    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-   <style type="text/css">
-     html { height: 100% }
-     body { height: 100%; margin: 0; padding: 0 }
-     #map_canvas { height: 100% }
-   </style>
    <script type="text/javascript"
      src="http://maps.googleapis.com/maps/api/js?key=KEYsensor=false">
    </script>
@@ -63,9 +59,18 @@
             
 </script>
 <body onload="initialize()">
-<div>
+<div id="nav">
+<!-- These are place holder elements for things we may choose to add later. The h1 tag can be replaced by a logo image file. The positioning of the elements may need to be adjusted. -->
+    <h1>Aurale</h1>
+    <ul>
+        <li><a href="link.htm">Link 1</a></li>
+        <li><a href="link.htm">Link 2</a></li>
+        <li><a href="link.htm">Link 3</a></li>
+    </ul>
+    <span id="search_map">    
     <input id="address" type="textbox" size="50" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()">
     <input type="button" id="btnSearch" value="Find location" onclick="codeAddress()">
+    </span>
 </div>
 <div id="map_canvas" style="width:100%; height:100%;"></div>
 </body>
